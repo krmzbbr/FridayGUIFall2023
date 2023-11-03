@@ -1,0 +1,38 @@
+﻿<Window x:Class="FridayGUIFall2023.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FridayGUIFall2023"
+        mc:Ignorable="d"
+        Title="My First GUI" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="229" Margin="375,140,0,0" Stroke="Black" VerticalAlignment="Top" Width="329"/>
+        <Button x:Name="myNewFancyButton" Content="Say Hello World" HorizontalAlignment="Left" Margin="50,49,0,0" VerticalAlignment="Top" Height="67" Width="115" Click="myNewFancyButton_Click" Background="#FF38EA43" Foreground="#FF1D1B1B">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF541212" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Label x:Name="myLabel" Content="Hello" HorizontalAlignment="Left" Margin="266,151,0,0" VerticalAlignment="Top" Width="140" MouseEnter="myLabel_MouseEnter" MouseLeave="myLabel_MouseLeave"/>
+        <Button x:Name="myOtherButton" Content="Say Hello Class" HorizontalAlignment="Left" Margin="50,162,0,0" VerticalAlignment="Top" Height="55" Width="115" Click="myOtherButton_Click"/>
+        <Label x:Name="myOtherLabel" Content="New Label" HorizontalAlignment="Left" Margin="400,49,0,0" VerticalAlignment="Top" Width="249"/>
+        <TextBox x:Name="userNameTextBox" HorizontalAlignment="Left" Margin="470,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" Height="39"/>
+        <Label x:Name="userNameLabel" Content="User Name" HorizontalAlignment="Left" Margin="381,176,0,0" VerticalAlignment="Top" Width="84"/>
+        <CheckBox x:Name="isItSunnyCheckBox" Content="Is it sunny today?" HorizontalAlignment="Left" Margin="484,233,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="myTextBlock" HorizontalAlignment="Left" Margin="50,241,0,0" TextWrapping="Wrap" Text="hello class&#xA;hello world" VerticalAlignment="Top" Width="228" Height="47" TextChanged="TextBox_TextChanged" BorderBrush="{x:Null}"/>
+        <Ellipse HorizontalAlignment="Left" Height="100" Margin="675,16,0,0" Stroke="#FFD21818" VerticalAlignment="Top" Width="100" Fill="#FFE84040"/>
+        <RadioButton x:Name="twentyThirtyRadioButton" Content="20-30" HorizontalAlignment="Left" Margin="490,271,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.966,0.337"/>
+        <Label x:Name="ageLabel" Content="Your Age Range" HorizontalAlignment="Left" Margin="381,262,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="thirtyFortyRadioButton" Content="30-40" HorizontalAlignment="Left" Margin="560,271,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.966,0.337"/>
+        <RadioButton x:Name="fortyFiftyRadioButton" Content="40-50" HorizontalAlignment="Left" Margin="625,271,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.966,0.337"/>
+        <Button x:Name="submitButton" Content="Button" HorizontalAlignment="Left" Margin="484,304,0,0" VerticalAlignment="Top" Width="62" Click="submitButton_Click"/>
+        <Slider HorizontalAlignment="Left" Margin="240,369,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="400,100,0,0" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="Option 1"/>
+            <ListBoxItem Content="Option 2"/>
+        </ComboBox>
+    </Grid>
+</Window>
